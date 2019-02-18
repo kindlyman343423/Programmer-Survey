@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0;
 }
+.red-span{
+    color: blue;
+}
+.imojis{
+    border: none;
+    background: transparent;
+    font-size: 2em;
+}
+#after-submit{
+    /* display: none; */
+    position: absolute;
+    top: auto;
+    left: 100px;
+    background-color: cyan;
+    width: auto;
+}
+/*BREAKPOINTS*/

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Programmer's Survey</title>
     <link rel="stylesheet" type="text/css" href="styles/design.css"/>
+    <script src="scripts/script.js"></script>
 </head>
 <body>
     <header id="title">
@@ -16,7 +17,7 @@
         <p id="description">
             Let us know what all programmers think
         </p>
-        <form id="survey-form" action="" method="POST" autocomplete="off">
+        <form id="survey-form" action="" method="POST" autocomplete="off" onsubmit="hello()">
             
             <label for="Name" id="name-label">
                 <div>
@@ -69,7 +70,7 @@
 
             <div>
                 <div>
-                    <span>Which language you like the most ?</span>
+                    Which <b>language</b> you like the most ?<span class="red-span">*</span>
                 </div>
                 <div>
                     <select id="language-dropdown" required>
@@ -93,12 +94,79 @@
                     </select>
                 </div>
             </div>
+
             <div>
                 <div>
-                    How's the survey Help us to improve
+                    Which <b>JS Framework</b> you like the most ?<span class="red-span">*</span>
                 </div>
-                <textarea></textarea>
+                <div><input type="radio" name="answer" required/>React JS</div>
+                <div><input type="radio" name="answer" required/>Angular JS</div>
+                <div><input type="radio" name="answer" required/>Vue JS</div>
+                <div><input type="radio" name="answer" required/>Other</div>
             </div>
+            <div>
+                <div>
+                    Which <b>Data Structure</b> you like the most ?<span class="red-span">*</span>
+                </div>    
+                <div><input type="radio" name="ds" required/>Array</div>
+                <div><input type="radio" name="ds" required/>Stack</div>
+                <div><input type="radio" name="ds" required/>Queue</div>
+                <div><input type="radio" name="ds" required/>Linked List</div>
+                <div><input type="radio" name="ds" required/>Trees</div>
+                <div><input type="radio" name="ds" required/>Graphs</div>
+                <div><input type="radio" name="ds" required/>Sets</div>
+                <div><input type="radio" name="ds" required/>Treaps</div>
+                <div><input type="radio" name="ds" required/>Trie</div>
+            </div>
+            <div>
+                <div>
+                    How many <b>maximum lines</b> of code you have coded in one turn ?<span class="red-span">*</span>
+                </div>
+                <div><input type="radio" name="lines" required/>less than 100</div>
+                <div><input type="radio" name="lines" required/>100 - 200</div>
+                <div><input type="radio" name="lines" required/>200 - 300</div>
+                <div><input type="radio" name="lines" required/>300 - 400</div>
+                <div><input type="radio" name="lines" required/>400 - 500</div>
+                <div><input type="radio" name="lines" required/>500 - 600</div>
+                <div><input type="radio" name="lines" required/>600 - 700</div>
+                <div><input type="radio" name="lines" required/>700 - 800</div>
+                <div><input type="radio" name="lines" required/>800 - 900</div>
+                <div><input type="radio" name="lines" required/>900 - 1000</div>
+                <div><input type="radio" name="lines" required/>greater than 1000</div>
+            </div>
+            <div>
+                <div>
+                    How many <b>lines</b> you have <b>coded so far</b> ?<span class="red-span">*</span>
+                </div>
+                <div><input type="radio" name="coded" required/>less than 200</div>
+                <div><input type="radio" name="coded" required/>200 - 500</div>
+                <div><input type="radio" name="coded" required/>500 - 1000</div>
+                <div><input type="radio" name="coded" required/>1000 - 3000</div>
+                <div><input type="radio" name="coded" required/>3000 - 5000</div>
+                <div><input type="radio" name="coded" required/>greater than 5000</div>
+            </div>
+            <div>
+                <div>
+                    Have you ever created a software ?<span class="red-span">*</span>
+                </div>
+                <div><input type="radio" name="soft" required/>Yes</div>
+                <div><input type="radio" name="soft" required/>No</div>
+            </div>
+            <div id="after-submit">
+                <h2>So how it is</h2>
+                <button type="button" class="imojis">😀</button>
+                <button type="button" class="imojis">🙂</button>
+                <button type="button" class="imojis">😐</button>
+                <button type="button" class="imojis">😣</button>
+                <button type="button" class="imojis">😩</button>
+            </div>
+            <div>
+                <div>
+                    Help us to improve our survey  
+                </div>
+                <textarea rows="5" cols="30"></textarea>
+            </div>
+
             <div>
                 <input type="submit" name="submit" id="submit"/>
             </div>
