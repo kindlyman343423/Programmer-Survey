@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programmer's Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles/design.css"/>
+</head>
+<body>
+    <header id="title">
+        <h1>Programmer's Survey</h1>
+    </header>
+
+    <section>
+        <p id="description">
+            Let us know what all programmers think
+        </p>
+        <form id="survey-form" action="" method="POST" autocomplete="off">
+            
+            <label for="Name" id="name-label">
+                <div>
+                    <span>Name:</span><span class="red-span">*</span>
+                </div>
+                <div>
+                    <input type="text" id="Name" placeholder="Enter your name" required/>
+                </div>
+            </label>
+            
+            <label for="Email" id="email-label">
+                <div>
+                    <span>Email:</span><span class="red-span">*</span>
+                </div>
+                <div>
+                    <input type="email" id="Email" placeholder="Enter your email" required/>
+                </div>
+            </label>
+            
+            <label for="Number" id="number-label">
+                <div>
+                    <span>Age:</span><span class="red-span">*</span>
+                </div>
+                <div>
+                    <input type="number" id="Number" placeholder="Enter your age" required/>
+                </div>
+            </label>
+
+            <div>
+                <div>
+                    <span>Which option best describes your current role?</span><span class="red-span">*</span>
+                </div>
+                <div>
+                    <select id="dropdown" required>
+                        <option>Student</option>
+                        <option>Programmer</option>
+                        <option>Freelancer</option>
+                        <option>Front End Developer</option>
+                        <option>Backend End Developer</option>
+                        <option>Full Stack Developer</option>
+                        <option>Android Developer</option>
+                        <option>IOS Developer</option>
+                        <option>Hacker</option>
+                        <option>System Engineer</option>
+                        <option>Software Engineer</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <span>Which language you like the most ?</span>
+                </div>
+                <div>
+                    <select id="language-dropdown" required>
+                        <option>Bash</option>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>C#</option>
+                        <option>CSS</option>
+                        <option>Go</option>
+                        <option>HTML 5</option>
+                        <option>Java</option>
+                        <option>JavaScript</option>
+                        <option>Lua</option>
+                        <option>Perl</option>
+                        <option>Pony</option>
+                        <option>PHP</option>
+                        <option>Python 3</option>
+                        <option>Q#</option>
+                        <option>Ruby</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>
+                    How's the survey Help us to improve
+                </div>
+                <textarea></textarea>
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit"/>
+            </div>
+        </form>
+    </section>
+    <footer>
+        Gaurav Walia
+    </footer>
+</body>
+</html>
