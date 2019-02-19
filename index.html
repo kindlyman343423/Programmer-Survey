@@ -19,34 +19,40 @@
         </p>
         <form id="survey-form" action="" method="POST" autocomplete="off" onsubmit="hello()">
             
-            <label for="Name" id="name-label">
-                <div>
-                    <span>Name:</span><span class="red-span">*</span>
-                </div>
-                <div>
-                    <input type="text" id="Name" placeholder="Enter your name" required/>
-                </div>
-            </label>
+            <div class="question">
+                <label for="Name" id="name-label">
+                    <div class="inline">
+                        <span>Name:</span><span class="red-span">*</span>
+                    </div>
+                    <div class="inline">
+                        <input type="text" id="Name" placeholder="Enter your name" required/>
+                    </div>
+                </label>
+            </div>
             
-            <label for="Email" id="email-label">
-                <div>
-                    <span>Email:</span><span class="red-span">*</span>
-                </div>
-                <div>
-                    <input type="email" id="Email" placeholder="Enter your email" required/>
-                </div>
-            </label>
-            
-            <label for="Number" id="number-label">
-                <div>
-                    <span>Age:</span><span class="red-span">*</span>
-                </div>
-                <div>
-                    <input type="number" id="Number" placeholder="Enter your age" required/>
-                </div>
-            </label>
+            <div class="question">
+                <label for="Email" id="email-label">
+                    <div class="inline">
+                        <span>Email:</span><span class="red-span">*</span>
+                    </div>
+                    <div class="inline">
+                        <input type="email" id="Email" placeholder="Enter your email" required/>
+                    </div>
+                </label>
+            </div>
 
-            <div>
+            <div class="question">
+                <label for="Number" id="number-label">
+                    <div class="inline">
+                        <span>Age:</span><span class="red-span">*</span>
+                    </div>
+                    <div class="inline">
+                        <input type="number" id="Number" placeholder="Enter your age" required/>
+                    </div>
+                </label>
+            </div>
+
+            <div class="question">
                 <div>
                     <span>Which option best describes your current role?</span><span class="red-span">*</span>
                 </div>
@@ -68,7 +74,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="question">
                 <div>
                     Which <b>language</b> you like the most ?<span class="red-span">*</span>
                 </div>
@@ -95,83 +101,162 @@
                 </div>
             </div>
 
-            <div>
+            <div class="question">
                 <div>
                     Which <b>JS Framework</b> you like the most ?<span class="red-span">*</span>
                 </div>
-                <div><input type="radio" name="answer" required/>React JS</div>
-                <div><input type="radio" name="answer" required/>Angular JS</div>
-                <div><input type="radio" name="answer" required/>Vue JS</div>
-                <div><input type="radio" name="answer" required/>Other</div>
+                <div>
+                    <label for="reactjs">
+                        <input type="radio" name="answer" id="reactjs" required/>React JS
+                    </label>
+                </div>
+                <div>
+                    <label for="angularjs">
+                        <input type="radio" name="answer" id="angularjs" required/>Angular JS
+                    </label>
+                </div>
+                <div>
+                    <label for="vuejs">
+                        <input type="radio" name="answer" id="vuejs" required/>Vue JS
+                    </label>
+                </div>
+                <div>
+                    <label for="other-answer">
+                        <input type="radio" name="answer" id="other-answer" required/>Other
+                    </label>
+                </div>
             </div>
-            <div>
+
+            <div class="question">
                 <div>
                     Which <b>Data Structure</b> you like the most ?<span class="red-span">*</span>
                 </div>    
-                <div><input type="radio" name="ds" required/>Array</div>
-                <div><input type="radio" name="ds" required/>Stack</div>
-                <div><input type="radio" name="ds" required/>Queue</div>
-                <div><input type="radio" name="ds" required/>Linked List</div>
-                <div><input type="radio" name="ds" required/>Trees</div>
-                <div><input type="radio" name="ds" required/>Graphs</div>
-                <div><input type="radio" name="ds" required/>Sets</div>
-                <div><input type="radio" name="ds" required/>Treaps</div>
-                <div><input type="radio" name="ds" required/>Trie</div>
+                <div>
+                    <label for="array"><input type="radio" name="ds" id="array" required/>Array</label>
+                </div>
+                <div>
+                    <label for="stack"><input type="radio" name="ds" id="stack" required/>Stack</label>
+                </div>
+                <div>
+                    <label for="queue"><input type="radio" name="ds" id="queue" required/>Queue</label>
+                </div>
+                <div>
+                    <label for="linkedlist"><input type="radio" name="ds" id="linkedlist" required/>Linked List</label>
+                </div>
+                <div>
+                    <label for="trees"><input type="radio" name="ds" id="trees" required/>Trees</label>
+                </div>
+                <div>
+                    <label for="graphs"><input type="radio" name="ds" id="graphs" required/>Graphs</label>
+                </div>
+                <div>
+                    <label for="sets"><input type="radio" name="ds" id="sets" required/>Sets</label>
+                </div>
+                <div>
+                    <label for="treaps"><input type="radio" name="ds" id="treaps" required/>Treaps</label>
+                </div>
+                <div>
+                    <label for="trie"><input type="radio" name="ds" id="trie" required/>Trie</label>
+                </div>
             </div>
-            <div>
+
+            <div class="question">
                 <div>
                     How many <b>maximum lines</b> of code you have coded in one turn ?<span class="red-span">*</span>
                 </div>
-                <div><input type="radio" name="lines" required/>less than 100</div>
-                <div><input type="radio" name="lines" required/>100 - 200</div>
-                <div><input type="radio" name="lines" required/>200 - 300</div>
-                <div><input type="radio" name="lines" required/>300 - 400</div>
-                <div><input type="radio" name="lines" required/>400 - 500</div>
-                <div><input type="radio" name="lines" required/>500 - 600</div>
-                <div><input type="radio" name="lines" required/>600 - 700</div>
-                <div><input type="radio" name="lines" required/>700 - 800</div>
-                <div><input type="radio" name="lines" required/>800 - 900</div>
-                <div><input type="radio" name="lines" required/>900 - 1000</div>
-                <div><input type="radio" name="lines" required/>greater than 1000</div>
+                <div>
+                    <label for="less100"><input type="radio" name="lines" id="less100" required/>less than 100</label>
+                </div>
+                <div>
+                    <label for="100200"><input type="radio" name="lines" id="100200" required/>100 - 200</label>
+                </div>
+                <div>
+                    <label for="200300"><input type="radio" name="lines" id="200300" required/>200 - 300</label>
+                </div>
+                <div>
+                    <label for="300400"><input type="radio" name="lines" id="300400" required/>300 - 400</label>
+                </div>
+                <div>
+                    <label for="400500"><input type="radio" name="lines" id="400500" required/>400 - 500</label>
+                </div>
+                <div>
+                    <label for="500600"><input type="radio" name="lines" id="500600" required/>500 - 600</label>
+                </div>
+                <div>
+                    <label for="600700"><input type="radio" name="lines" id="600700" required/>600 - 700</label>
+                </div>
+                <div>
+                    <label for="700800"><input type="radio" name="lines" id="700800" required/>700 - 800</label>
+                </div>
+                <div>
+                    <label for="800900"><input type="radio" name="lines" id="800900" required/>800 - 900</label>
+                </div>
+                <div>
+                    <label for="9001000"><input type="radio" name="lines" id="9001000" required/>900 - 1000</label>
+                </div>
+                <div>
+                    <label for="greater1000"><input type="radio" name="lines" id="greater1000" required/>greater than 1000</label>
+                </div>
             </div>
-            <div>
+
+            <div class="question">
                 <div>
                     How many <b>lines</b> you have <b>coded so far</b> ?<span class="red-span">*</span>
                 </div>
-                <div><input type="radio" name="coded" required/>less than 200</div>
-                <div><input type="radio" name="coded" required/>200 - 500</div>
-                <div><input type="radio" name="coded" required/>500 - 1000</div>
-                <div><input type="radio" name="coded" required/>1000 - 3000</div>
-                <div><input type="radio" name="coded" required/>3000 - 5000</div>
-                <div><input type="radio" name="coded" required/>greater than 5000</div>
+                <div>
+                    <label for="less200"><input type="radio" name="coded" id="less200" required/>less than 200</label>
+                </div>
+                <div>
+                    <label for="200500"><input type="radio" name="coded" id="200500" required/>200 - 500</label>
+                </div>
+                <div>
+                    <label for="5001000"><input type="radio" name="coded" id="5001000" required/>500 - 1000</label>
+                </div>
+                <div>
+                    <label for="10003000"><input type="radio" name="coded" id="10003000" required/>1000 - 3000</label>
+                </div>
+                <div>
+                    <label for="30005000"><input type="radio" name="coded" id="30005000" required/>3000 - 5000</label>
+                </div>
+                <div>
+                    <label for="greater5000"><input type="radio" name="coded" id="greater5000" required/>greater than 5000</label>
+                </div>
             </div>
-            <div>
+
+            <div class="question">
                 <div>
                     Have you ever created a software ?<span class="red-span">*</span>
                 </div>
-                <div><input type="radio" name="soft" required/>Yes</div>
-                <div><input type="radio" name="soft" required/>No</div>
+                <div>
+                    <label for="yes"><input type="radio" name="soft" id="yes" required/>Yes</label>
+                </div>
+                <div>
+                    <label for="no"><input type="radio" name="soft" id="no" required/>No</label>
+                </div>
             </div>
-            <div id="after-submit">
-                <h2>So how it is</h2>
-                <button type="button" class="imojis">😀</button>
-                <button type="button" class="imojis">🙂</button>
-                <button type="button" class="imojis">😐</button>
-                <button type="button" class="imojis">😣</button>
-                <button type="button" class="imojis">😩</button>
-            </div>
-            <div>
+
+            <div class="question">
                 <div>
                     Help us to improve our survey  
                 </div>
-                <textarea rows="5" cols="30"></textarea>
+                <textarea rows="5" cols="30" placeholder="Enter some comments"></textarea>
             </div>
 
-            <div>
+            <div id="div-buttons" onclick="hello()">
                 <input type="submit" name="submit" id="submit"/>
+                <input type="reset" name="reset" id="reset"/>
             </div>
         </form>
     </section>
+    <div id="after-submit">
+            <span id="cross" onclick="hidesmile()">X</span>
+            <h2>So how it is</h2>
+            <button type="button" class="imojis" onclick="hidesmile()">😀</button>
+            <button type="button" class="imojis" onclick="hidesmile()">🙂</button>
+            <button type="button" class="imojis" onclick="hidesmile()">😐</button>
+            <button type="button" class="imojis" onclick="hidesmile()">😣</button>
+            <button type="button" class="imojis" onclick="hidesmile()">😩</button>
+        </div>
     <footer>
         Gaurav Walia
     </footer>
