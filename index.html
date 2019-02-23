@@ -17,7 +17,7 @@
         <p id="description">
             Let us know what all programmers think
         </p>
-        <form id="survey-form" action="" method="POST" autocomplete="off" onsubmit="hello()">
+        <form id="survey-form" action="" method="POST" autocomplete="off">
             
             <div class="question">
                 <label for="Name" id="name-label">
@@ -242,13 +242,17 @@
                 <textarea rows="5" cols="30" placeholder="Enter some comments"></textarea>
             </div>
 
-            <div id="div-buttons" onclick="hello()">
-                <input type="submit" name="submit" id="submit"/>
+            <div id="div-buttons">
+                <span onclick="hello()">
+                    <input type="submit" name="submit" id="submit"/>
+                </span>
                 <input type="reset" name="reset" id="reset"/>
             </div>
         </form>
     </section>
-    <div id="after-submit">
+    <!-- CONTENT AFTER SUBMITTING -->
+    <div id="modal">
+        <div id="after-submit">
             <span id="cross" onclick="hidesmile()">X</span>
             <h2>So how it is</h2>
             <button type="button" class="imojis" onclick="hidesmile()">😀</button>
@@ -257,6 +261,7 @@
             <button type="button" class="imojis" onclick="hidesmile()">😣</button>
             <button type="button" class="imojis" onclick="hidesmile()">😩</button>
         </div>
+    </div>
     <footer>
         Gaurav Walia
     </footer>
