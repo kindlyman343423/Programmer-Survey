@@ -14,6 +14,7 @@ body{
 /*styling header content*/
 header{
     background-color: rgb(56, 162, 204);
+    padding: 10px;
 }
 
 /* for all questions */
@@ -95,6 +96,13 @@ textarea::placeholder,input::placeholder{
     color: red;
 }
 
+/*STYLING FOOTER*/
+footer
+{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(56, 162, 204);
+}
 /*BREAKPOINTS*/
 /*small*/
 @media screen and (max-width: 767px)
